@@ -13,6 +13,7 @@
     font-weight: normal;
     src: local('../fonts/Miama'), url('../fonts/Miama.woff') format('woff');
     }
+
 :root{
     --main-color: #E6533C;
     --secondary-color: #FFFFFF80;
@@ -23,6 +24,7 @@
     box-sizing: border-box;
     font-family: "Inter", serif;
 }
+
 /* nav, header{
     background: #151515f6;
 } */
@@ -221,7 +223,7 @@ main .habit-container{
 /* Run an Extra section */
 main .run-container{
     max-width: 1060px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     padding: 100px 0;
     background: #222222;
     padding: 32px;
@@ -265,4 +267,114 @@ main .run-container{
         background-position: center;
         background-size: cover;
      }
+}
+/* BMI section */
+.bmi-section{
+    padding: 0 0 88px;
+
+}
+.bmi-section .bmi-text-heading{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 390px;
+
+    & h2{
+        font-size: 48px;
+        font-weight: 900;
+    }
+    & p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.bmi-section .bmi-clc-section{
+    width: 100%;
+    background: #222222;
+    margin-top: 88px;
+    & .bmi-clc-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 175px;
+        max-width: 1440px;
+        padding: 50px 190px;
+        margin: 0 auto;
+
+        & .bmi-chart table{
+            margin-top: 52px;
+            width: 310px;
+            border-collapse: collapse;
+            font-size: 14px;
+            border: 1px solid #FFFFFF1A;
+            color: var(--secondary-color);
+        }
+        & .bmi-chart table td, th{
+            padding: 1rem;
+            
+        }
+        & .bmi-chart table th{
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        & .bmi-calculate{
+            display: flex;
+            flex-direction: column;
+            gap: 34px;
+            & .bmi-calculate-text{
+                & h2{
+                    font-size: 28px;
+                    font-weight: 900;
+                    color: #fff;
+                }
+                & p{
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin: 14px 0;
+                    color: var(--secondary-color);
+                }
+            }
+            /* & form{
+                display: flex;
+                flex-direction: column;
+            } */
+            & form .input-box, .input-box-big{
+                width: 282px;
+                padding: 12px 40px;
+                margin: 6px;
+                border-radius: 8px;
+                background: rgba(255, 255, 255, 0.1);
+                outline: none;
+                border: none;
+                font-size: 16px;
+                font-weight: 400;
+                color: #FFFFFF99;
+
+            }
+            & form .gender{
+                max-width: 587px;
+            }
+            & form .input-box-big{
+                width: 100%;
+                padding: 12px 40px;
+            }
+            & form .btn{
+                width: 224px;
+                padding: 16px 40px;
+                margin-top: 34px;
+                border-radius: 42px;
+                background: var(--main-color);
+                font-size: 18px;
+                font-weight: 600;
+                color: #fff;
+                cursor: pointer;
+            }
+            & form select option{
+                background: #000000b9;
+            }
+        }
+    }
+
 }
