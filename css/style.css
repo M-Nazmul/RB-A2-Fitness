@@ -378,3 +378,53 @@ main .run-container{
     }
 
 }
+
+/* Team section */
+.team-section{
+    max-width: 1440px;
+    padding: 0 190px;
+    margin: 0 auto;
+
+    & .team-text-content{
+        max-width: 671px;
+        margin: 0 auto 58px;
+        text-align: center;
+    }
+    & .team-text-content h2{
+        font-size: 48px;
+        font-weight: 900;
+        color: #fff;
+    }
+    & .team-text-content p{
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--secondary-color);
+    }
+    & .team-img-container{
+        display: grid;
+        grid-template-columns: repeat(3, 326px);
+        gap: 20px;
+    }
+    & .team-img-container figure{
+        max-width: 326px;
+        height: 272px;
+        position: relative;
+        & .team-title{
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+        }
+        & h3{
+            font-size: 24px;
+        }
+        & p{
+            color: var(--secondary-color);
+        }
+    }
+    & .team-img-container figure img{
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        object-fit: cover
+    }
+}
