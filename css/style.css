@@ -13,7 +13,67 @@
     font-weight: normal;
     src: local('../fonts/Miama'), url('../fonts/Miama.woff') format('woff');
     }
+:root{
+    --main-color: #E6533C;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+body{
+    background: #151515;
+}
+    /* navbar section */
 nav{
-    font-size: 32px;
-    font-family: Miama Regular;
+    
+    /* background: linear-gradient(180deg, rgb(17,17,17), rgba(119,119,119, 0) 100%); */
+    /* background: #151515; */
+}
+nav .nav-container{
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+nav .logo{
+    font-size: 36px;
+    font-weight: 800;
+    font-style: italic;
+    color: var(--main-color);
+}
+nav ul{
+    display: flex;
+    gap: 2.9rem;
+    padding: 1rem;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 24px;
+}
+
+nav ul li a.active{
+    background-color: var(--main-color);
+    font-weight: 600;
+}
+/* header section */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
 }
