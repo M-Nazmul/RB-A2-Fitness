@@ -15,6 +15,7 @@
     }
 :root{
     --main-color: #E6533C;
+    --secondary-color: #FFFFFF80;
 }
 *{
     padding: 0;
@@ -29,7 +30,7 @@ nav{
     background: linear-gradient(180deg, rgb(17, 17, 17), rgb(32 32 32 / 84%) 100%);
 }
 header{
-    background: linear-gradient(0deg, rgb(17, 17, 17), rgb(32 32 32 / 84%) 100%);
+    background: linear-gradient(0deg, rgb(1, 1, 1), rgb(32 32 32 / 84%) 100%);
 }
     /* navbar section */
 nav{
@@ -129,6 +130,7 @@ header .img-container{
         position: absolute;
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 12px;
+        -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         background: rgba(48, 48, 48, 0.54);
     }
@@ -164,13 +166,55 @@ header .img-container{
         gap: 12px;
     }
     & h2 {
-        font-size: 40px;
+        font-size: 24px;
         font-weight: 900;
         color: #fff;
     }
     & p {
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 400;
         color: #FFFFFFA6;
+    }
+}
+main{
+    background: #000;
+    color: #fff;
+}
+/* Habits section */
+main .habit-container{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 100px 0;
+    & h2{
+        font-size: 48px;
+        font-weight: 900;
+        text-align: center;
+    }
+    & p{
+        max-width: 671px;
+        margin: 14px auto;
+        text-align: center;
+        color: var(--secondary-color);
+    }
+    & .habit-content{
+        display: grid;
+        grid-template-columns: repeat(4, 231px);
+        gap: 40px;
+        text-align: center;
+        margin-top: 58px;
+        & figure img{
+            /* width: 231px; */
+            border-radius: 50%;
+        }
+        & figure h3{
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        & figure p{
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--secondary-color);
+        }
     }
 }
