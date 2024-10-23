@@ -1,1 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* custom fonts */
+@font-face {
+    font-family: 'Miama Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Miama Regular'), url('../fonts/Miama-Regular.woff') format('woff');
+    }
+
+    @font-face {
+    font-family: 'Miama';
+    font-style: normal;
+    font-weight: normal;
+    src: local('../fonts/Miama'), url('../fonts/Miama.woff') format('woff');
+    }
+nav{
+    font-size: 32px;
+    font-family: Miama Regular;
+}
