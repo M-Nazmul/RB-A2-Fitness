@@ -13,7 +13,9 @@
     font-weight: normal;
     src: local('../fonts/Miama'), url('../fonts/Miama.woff') format('woff');
     }
-
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --main-color: #E6533C;
     --secondary-color: #FFFFFF80;
@@ -382,7 +384,7 @@ main .run-container{
 /* Team section */
 .team-section{
     max-width: 1440px;
-    padding: 0 190px;
+    padding: 0 190px 88px;
     margin: 0 auto;
 
     & .team-text-content{
@@ -426,5 +428,56 @@ main .run-container{
         height: 100%;
         border-radius: 18px;
         object-fit: cover
+    }
+}
+
+/*  */
+
+
+/* footer section */
+footer{
+    background: #1A1A1A;
+    & .footer-container{
+        max-width: 1440px;
+        padding: 88px 190px 35px;
+        margin: 0 auto;
+        & .footer-text-content{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 100px;
+            margin-bottom: 79px;
+        }
+        & .footer-logo{
+            max-width: 430px;
+        }
+        & .footer-logo h1{
+            color: var(--main-color);
+            font-size: 70px;
+            font-weight: 800;
+            font-style: italic;
+        }
+        & .footer-logo p{
+            color: var(--secondary-color);
+            font-size: 14px;
+            font-weight: 400;
+        }
+        & ul li{
+            list-style: none;
+        }
+        & ul li a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-size: 23px;
+            font-weight: 400;
+        }
+        & ul li:nth-child(even){
+            margin: 20px 0;
+        }
+        & .footer-services h2{
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 39px;
+        }
     }
 }
