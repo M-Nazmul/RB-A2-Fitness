@@ -382,7 +382,7 @@ main .run-container{
 }
 
 /* Team section */
-.team-section{
+.team-section, .plan-section{
     max-width: 1440px;
     padding: 0 190px 88px;
     margin: 0 auto;
@@ -433,6 +433,59 @@ main .run-container{
 
 /*  */
 
+.plan-section{
+    & .plan-heading{
+        text-align: center;
+        margin: 20px 0;
+        padding: 0 0 22px;
+        font-size:32px;
+        font-weight: 800;
+    }
+    & .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+
+        & .card-content{
+            background: #1A1A1A;
+            padding: 3rem;
+            border-radius: 6px;
+
+            & h2{
+                text-align: center;
+                margin-bottom: 22px;
+                padding: 16px 30px;
+                border-radius: 6px;
+                background: linear-gradient(to right, #eb3c5a, #f67831);
+            }
+            & .card-details{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                & span{
+                    font-size: 38px;
+                    font-weight: 800;
+                }
+                & p{
+                    color: var(--secondary-color);
+                }
+                & .btn{
+                        width: 224px;
+                        padding: 16px 40px;
+                        border-radius: 42px;
+                        background: var(--main-color);
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: #fff;
+                        cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
 
 /* footer section */
 footer{
