@@ -347,7 +347,7 @@ main .run-container{
                 }
              }
             & form .input-box, .input-box-big{
-                width: 282px;
+                width: 45%;
                 padding: 12px 40px;
                 margin: 6px;
                 border-radius: 8px;
@@ -360,10 +360,10 @@ main .run-container{
 
             }
             & form .gender{
-                max-width: 587px;
+                max-width: 94%;
             }
             & form .input-box-big{
-                width: 98%;
+                width: 100%;
                 padding: 12px 40px;
             }
             & form .btn{

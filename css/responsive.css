@@ -170,6 +170,15 @@ footer {
 
   }
 
+  .bmi-section .bmi-clc-section{
+
+    & .bmi-clc-container{
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+}
 /* Team section */
 .team-section, .plan-section{
     padding: 0 30px 88px;
