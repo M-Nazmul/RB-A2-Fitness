@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
@@ -12,11 +13,14 @@
      <nav>
         <div class="nav-container">
             <h2 class="logo">Fitness</h2>
-            <ul>
+            <ul class="menu-list">
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">About</a></li>
+            </ul>
+            <ul class="menu-bars">
+                <li><i class="fa-solid fa-bars"></i></li>
             </ul>
         </div>
      </nav>
@@ -50,7 +54,7 @@
                 </div>
             </figure>
         </div>
-    </header>
+    </header> 
 
     <main>
          <!-- Change your habits section -->
@@ -83,23 +87,22 @@
             </div>
         </section>
         <!-- Run an Extra section -->
-        <section class="run-container">
-            <div class="run-text-content">
-                <h2>Run an Extra <br>
-                    Mile Easily
-                </h2>
-                <p>
-                    We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.
-                </p>
-                <button class="btn">Join Now</button>
+        <section class="run-section">
+            <div class="run-container">
+                <div class="run-text-content">
+                    <h2>Run an Extra <br>
+                        Mile Easily
+                    </h2>
+                    <p>
+                        We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.
+                    </p>
+                    <button class="btn">Join Now</button>
+                </div>
+                <figure><div class="run-img"></div></figure>
             </div>
-            <!-- <figure>
-                <img src="./assets/run.jpg" alt="">
-            </figure> -->
-            <figure><div class="run-img"></div></figure>
         </section>
         <!-- Trainings and Exercise section -->
-        <section></section>
+        <!-- <section></section> -->
         <!-- BMI section -->
         <section class="bmi-section">
             <div class="bmi-text-heading">
@@ -141,11 +144,11 @@
                             </p>
                         </div>
                         <form action="">
-                            <div style="display: flex; gap: 12px;">
+                            <div class="input-box-content">
                                 <input class="input-box" type="number" placeholder="Height/cm">
                                 <input class="input-box" type="number" placeholder="Weight/kg">
                             </div>
-                            <div style="display: flex; gap: 12px;">
+                            <div class="input-box-content">
                                 <input class="input-box" type="number" placeholder="Age">
                                 <select class="input-box" name="sex" id="">
                                     <option disabled selected >sex</option>
@@ -223,7 +226,7 @@
             </div>
         </section>
         <!-- MEMBERSHIP PLANS -->
-         <section class="plan-section">
+        <section class="plan-section">
             <div class="plan-heading"><h1>MEMBERSHIP PLANS</h1></div>
             <div class="card-container">
                 <div class="card-content">
@@ -308,5 +311,6 @@
             
         </div>
     </footer>
+
 </body>
 </html>

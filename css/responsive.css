@@ -1,0 +1,197 @@
+@media screen and (max-width:  993px){
+nav .nav-container{
+    padding: 50px 30px;
+}
+nav ul.menu-list{
+    display: none;
+}
+nav ul.menu-bars{
+    display: block;
+    font-size: 24px;
+    color: #fff;
+}
+.header-container{
+    justify-content: center;
+    padding: 0 30px;
+}
+
+header .img-container{
+    & div.img-text-box:nth-child(odd){
+        top: 125px;
+        right: -30px;
+    }
+}
+/* main section */
+main .habit-container {
+    & .habit-content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    & figure p{
+        max-width: 231px;
+    }
+}
+
+
+main .run-container{
+    margin: 0 30px;
+    gap: 31px;
+    flex-wrap: wrap;
+    justify-content: center;
+    & .btn{
+        width: 100%;
+    }
+}
+/* BMI section */
+
+.bmi-section .bmi-text-heading{
+    width: 100%;
+    padding: 0 30px;
+    margin: 66px 0 46px;
+
+    & h2{
+        font-size: 48px;
+        font-weight: 900;
+    }
+    & p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+.bmi-section .bmi-clc-section{
+
+    & .bmi-clc-container{
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        gap: 62px;
+        padding: 50px 30px;
+
+        form{
+            width: 100%;
+            & .input-box-content{
+                flex-wrap: wrap;
+            }
+         }
+    }
+
+/* Team section */
+.team-section, .plan-section{
+    padding: 0 30px 88px;
+
+    & .team-img-container{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+footer {
+    & .footer-container {
+        
+        & .footer-text-content {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+            margin-bottom: 79px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+}
+
+    
+
+
+@media screen and (max-width: 576px) {
+    nav .nav-container{
+        padding: 50px 30px;
+    }
+
+    .header-text-content{
+        max-width: 520px;
+        & h2{
+            font-size: 36px;
+            line-height: 120%;
+            font-weight: 900;
+            color: #fff;
+        }
+    }
+
+    header .btn-container{
+        gap: 20px;
+        & .btn{
+            font-size: 12px;
+        }
+    }
+    header .img-container{
+        & div.img-text-box:nth-child(odd){
+            width: 145px;
+            top: 50px;
+            right: 20px;
+            & h2 {
+                font-size: 30px;
+            }
+            & p {
+                font-size: 9px;
+            }
+        }
+        & .circle{
+            width: 30px;
+            height: 30px;
+        }
+        & div.img-text-box:nth-child(even){
+            width: 155px;
+            padding: 14px;
+            bottom: 210px;
+            left: 8px;
+            & h2 {
+                font-size: 18px;
+            }
+            & p {
+                font-size: 11px;
+            }
+        }
+    }
+
+
+    main .run-container{
+        margin: 0 20px;
+        & .run-text-content h2{
+            font-size: 32px;
+        }
+    }
+
+  }
+
+/* Team section */
+.team-section, .plan-section{
+    padding: 0 30px 88px;
+
+    & .team-img-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        
+    }
+}
+
+footer {
+    & .footer-container {
+        padding: 44px 30px;
+        & .footer-text-content {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 100px;
+            margin-bottom: 79px;
+        }
+    }
+}
+
+
+}

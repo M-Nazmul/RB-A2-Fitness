@@ -27,9 +27,6 @@ html{
     font-family: "Inter", serif;
 }
 
-/* nav, header{
-    background: #151515f6;
-} */
 nav{
     background: linear-gradient(180deg, rgb(17, 17, 17), rgb(32 32 32 / 84%) 100%);
 }
@@ -37,11 +34,6 @@ header{
     background: linear-gradient(0deg, rgb(1, 1, 1), rgb(32 32 32 / 84%) 100%);
 }
     /* navbar section */
-nav{
-    
-    /* background: linear-gradient(180deg, rgb(17,17,17), rgba(119,119,119, 0) 100%); */
-    /* background: #151515; */
-}
 nav .nav-container{
     max-width: 1440px;
     margin: auto;
@@ -56,12 +48,15 @@ nav .logo{
     font-style: italic;
     color: var(--main-color);
 }
-nav ul{
+nav ul.menu-list{
     display: flex;
     gap: 2.9rem;
     padding: 13px 4px;
     border-radius: 39px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+nav ul.menu-bars{
+    display: none;
 }
 nav ul li{
     list-style: none;
@@ -109,6 +104,7 @@ nav ul li a.active{
     }
 }
 header .btn-container{
+    width: 100%;
     display: flex;
     gap: 47px;
 
@@ -129,7 +125,10 @@ header .btn-container{
 }
 header .img-container{
     position: relative;
-
+    max-width: 350px;
+    & img{
+        width: 100%;
+    }
     & .img-text-box{
         position: absolute;
         border: 1px solid rgba(255, 255, 255, 0.1);
@@ -180,6 +179,7 @@ header .img-container{
         color: #FFFFFFA6;
     }
 }
+
 main{
     background: #000;
     color: #fff;
@@ -201,8 +201,8 @@ main .habit-container{
         color: var(--secondary-color);
     }
     & .habit-content{
-        display: grid;
-        grid-template-columns: repeat(4, 231px);
+        display: flex;
+        /* grid-template-columns: repeat(4, 231px); */
         gap: 40px;
         text-align: center;
         margin-top: 58px;
@@ -226,7 +226,6 @@ main .habit-container{
 main .run-container{
     max-width: 1060px;
     margin: 0 auto 100px;
-    padding: 100px 0;
     background: #222222;
     padding: 32px;
     border-radius: 18px;
@@ -298,9 +297,11 @@ main .run-container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 175px;
+        /* gap: 175px; */
+        gap: 17px;
         max-width: 1440px;
-        padding: 50px 190px;
+        /* padding: 50px 190px; */
+        padding: 50px 80px;
         margin: 0 auto;
 
         & .bmi-chart table{
@@ -338,10 +339,13 @@ main .run-container{
                     color: var(--secondary-color);
                 }
             }
-            /* & form{
-                display: flex;
-                flex-direction: column;
-            } */
+            
+             form{
+                width: 100%;
+                & .input-box-content{
+                    display: flex;
+                }
+             }
             & form .input-box, .input-box-big{
                 width: 282px;
                 padding: 12px 40px;
@@ -359,7 +363,7 @@ main .run-container{
                 max-width: 587px;
             }
             & form .input-box-big{
-                width: 100%;
+                width: 98%;
                 padding: 12px 40px;
             }
             & form .btn{
@@ -404,10 +408,11 @@ main .run-container{
     }
     & .team-img-container{
         display: grid;
-        grid-template-columns: repeat(3, 326px);
+        grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
     & .team-img-container figure{
+        
         max-width: 326px;
         height: 272px;
         position: relative;
@@ -444,7 +449,7 @@ main .run-container{
     & .card-container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         gap: 2rem;
 
         & .card-content{
